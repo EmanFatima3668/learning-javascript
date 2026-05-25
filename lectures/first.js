@@ -1,1 +1,1 @@
-console.log("hi it is my first time using github codespace")
+console.log("hi it is my first time using github")
