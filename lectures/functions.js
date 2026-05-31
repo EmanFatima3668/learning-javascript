@@ -24,3 +24,32 @@ function isLoggedIn(username ='sam')
     return `${username} just logged in `
 }
 console.log(isLoggedIn());
+
+//  rest opreator ... are used for adding multipul prices based on one parameter 
+
+function calculatePrice(valu1, value2, ...numb1){
+     return numb1
+}
+console.log(calculatePrice(300, 499 , 5000 , 5005))
+
+// object ko functions  ma kesy use kia jata ha 
+
+let object = {
+    username : "ahmad",
+    age : 10 
+}
+
+function objFunction(user){
+    return `${user.username} is ${user.age} year old`
+}
+console.log(objFunction(object));
+
+
+// array ko bhi as it hi use ki aja skta ha 
+
+
+const myArray = ['ahmad ', 'ali ', 'murtaza']
+function getArrayValue(getArray){
+    return getArray[2]
+}
+console.log(getArrayValue(myArray))
