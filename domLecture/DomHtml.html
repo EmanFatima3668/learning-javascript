@@ -22,15 +22,15 @@
     }
     addDay('saturday')
    
-    function removeDay(day){
-        const weekDay = document.querySelectorAll('.day')
-        for(let i = 0; i < weekDay.length; i++){
-            if(weekDay[i].innerHTML === day){
-                weekDay[i].remove()
-            }
-        }
-    }
-    removeDay('Monday')
+    // function removeDay(day){
+    //     const weekDay = document.querySelectorAll('.day')
+    //     for(let i = 0; i < weekDay.length; i++){
+    //         if(weekDay[i].innerHTML === day){
+    //             weekDay[i].remove()
+    //         }
+    //     }
+    // }
+    // removeDay('Monday')
 
 
     const language = document.querySelector("li:nth-child(2)")
@@ -38,7 +38,11 @@
     newLi.innerHTML = 'JavaScript'
     language.replaceWith(newLi)
 
-    
+   function removeDay(day){
+    const newLi = document.querySelector("li:nth-child(2)")
+    newLi.remove()
+   }
+   removeDay('javaScript')
 
 </script>
 </html>
