@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="list">
+        <li class="day">Monday</li>
+        <li class="day">Tuseday</li>
+        <li class="day">Wednesday</li>
+        <li class="day">Thursday</li>
+        <li class="day">Friday</li>
+    </ul>
+</body>
+<script>
+    function addDay(day){
+        const weekDay = document.createElement('li')
+        weekDay.innerHTML = `${day}`
+        document.querySelector('.list').appendChild(weekDay)
+    }
+    addDay('saturday')
+   
+    function removeDay(day){
+        const weekDay = document.querySelectorAll('.day')
+        for(let i = 0; i < weekDay.length; i++){
+            if(weekDay[i].innerHTML === day){
+                weekDay[i].remove()
+            }
+        }
+    }
+    removeDay('Monday')
+
+
+    
+
+</script>
+</html>
