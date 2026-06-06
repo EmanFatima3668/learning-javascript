@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="insert">
+        <h1>press any key to check </h1>
+    </div>
+
+</body>
+<script>
+    // document.addEventListener('keydown', function(event){
+    //     const insert = document.querySelector('.insert')
+    //     insert.innerHTML = `<h1>you have pressed ${event.key} </h1>`
+    // })
+
+
+    const insert = document.querySelector('.insert');
+
+    document.addEventListener('keydown', (e) => {
+        insert.innerHTML = `
+        <table border="1">
+            <tr>
+                <th>Key</th>
+                <th>Code</th>
+                <th>KeyCode</th>
+            </tr>
+            <tr>
+                <td>${e.key === " " ? "Space" : e.key}</td>
+                <td>${e.code}</td>
+                <td>${e.keyCode}</td>
+            </tr>
+        </table>
+        `;
+    });
+</script>
+</html>
