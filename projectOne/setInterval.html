@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello ramzann kezy ho </h1>
+    <button>stop</button>
+</body>
+<script>
+
+
+        // const working =  function (str) {
+        //     console.log(str, Date.now())
+        // }
+
+        // const my = setInterval(working, 2000 , "helo")
+
+        // const myWork = setInterval(()=>{
+        //     console.log ("hello)")
+        // },1000)
+
+
+        const color = ['red', 'blue', 'green', 'yellow', 'pink', 'black']
+        const chnage = setInterval (function(){
+         document.querySelector('button').addEventListener('click', function(){
+              const random = Math.floor(Math.random() * color.length);
+              document.body.style.backgroundColor = color[random];
+           }
+           )},2000)
+
+
+</script>
+</html>
